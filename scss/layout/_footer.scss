@@ -1,0 +1,7 @@
+.footer{
+    background-color: map-get($colors, primary);
+    color: map-get($colors , accent);
+    .btn{
+        background-color: map-get($colors, accent);
+    }
+}

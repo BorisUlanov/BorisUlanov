@@ -1,0 +1,6 @@
+.header{
+    background-color: map-get($colors, primary);
+    a{
+        color: map-get($colors, accent);
+    }
+}
