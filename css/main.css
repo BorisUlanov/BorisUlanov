@@ -8,6 +8,7 @@
   height: 24rem;
   margin: 10px;
   background-color: #4B0082;
+  transition: 1s ease-in-out;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -32,6 +33,10 @@
 }
 .card a:hover {
   filter: sepia(80%);
+}
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .header {
@@ -72,7 +77,20 @@
   text-shadow: 1px 1px 0 #ff0080, -1px -1px 0 #ff0080;
 }
 
-.video-background {
+.b-main {
+  background: url("/media/img/beksinski-background.gif") no-repeat center center;
+  background-size: cover;
+}
+
+.b-main__content {
+  background-color: #7B4397;
+  border-radius: 25px;
+}
+.b-main__content .row {
+  justify-content: center;
+}
+
+.cc-video-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -81,7 +99,7 @@
   z-index: -1;
   overflow: hidden;
 }
-.video-background .video-content {
+.cc-video-background .video-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,7 +111,7 @@
   object-fit: cover;
   pointer-events: none;
 }
-.video-background .fallback-image {
+.cc-video-background .fallback-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,23 +121,23 @@
   background-size: cover;
   display: none;
 }
-.video-background .no-video .video-content {
+.cc-video-background .no-video .video-content {
   display: none;
 }
-.video-background .no-video .fallback-image {
+.cc-video-background .no-video .fallback-image {
   display: block;
 }
 
-.main {
+.index-main {
   background: rgb(255, 215, 0);
   background: radial-gradient(circle, rgba(255, 215, 0, 0.4122635691) 0%, rgba(75, 0, 130, 0.5537109375) 100%);
 }
 
-.main__content {
+.index-main__content {
   background-color: #7B4397;
   border-radius: 25px;
 }
-.main__content .row {
+.index-main__content .row {
   justify-content: center;
 }
 

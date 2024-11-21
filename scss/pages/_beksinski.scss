@@ -1,0 +1,12 @@
+.b-main {
+    background: url('/media/img/beksinski-background.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.b-main__content {
+    background-color: map-get($colors, transitions);
+    border-radius: 25px;
+    .row {
+        justify-content: center;
+    }
+}

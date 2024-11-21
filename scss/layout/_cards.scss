@@ -3,6 +3,7 @@
     height: 24rem;
     margin: 10px;
     background-color: map-get($colors, primary);
+    transition: 1s ease-in-out;
     @include flexbox(column, nowrap, flex-start);
     img{
         width: 100%;
@@ -17,4 +18,5 @@
     }
     a{transition: filter 0.8s ease;
     &:hover {filter: sepia(80%)}}
+    &:hover {-webkit-transform:scale(1.1);transform:scale(1.1);}
 }
