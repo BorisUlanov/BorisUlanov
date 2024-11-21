@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/media/img/Icono-nube-megra.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Christian Cantamessa</title>
 </head>
 <body>
+    <div class="video-background">
+        <video autoplay muted loop playsinline class="video-content">
+            <source src="/media/vid/fondo-christian.cantamessa.mp4" type="video/mp4">
+        </video>
+        <div class="fallback-image">
+            <img src="/media/img/img-fondo-christian-cantamessa.avif" alt="Fondo de pantalla">
+        </div>
+    </div>
     <header class="header">
-        <nav class="header__nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="header__nav navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Black Rain</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +39,9 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-5">
-            <article class="bg-light p-4 rounded shadow-sm">
-                <h1 class="display-4">¿Quién fue Christian Cantamessa?</h1>
+        <div class="vhs container-fluid py-4">
+            <article class="col-12 col-md-8 mx-auto text-center vhs-content">
+                <h1 class="display-4 mb-4">¿Quién fue Christian Cantamessa?</h1>
                 <p class="lead">
                     Christian Cantamessa es un escritor, director y diseñador de videojuegos conocido por su trabajo en la industria de los videojuegos y el cine. Uno de los proyectos en los que trabajo fue un videojuego del año 2003 titulado Manhunt.
                 </p>
@@ -45,7 +53,7 @@
             </article>
         </div>
     </main>
-    <footer class="footer bg-dark text-white text-center py-4">
+    <footer class="footer text-center py-4">
         <p class="footer__text mb-2">Derechos reservados ;)</p>
         <section class="footer__comments">
             <h2 class="footer__comments-title">Dinos qué piensas</h2>
@@ -63,7 +71,7 @@
                     <label for="message" class="form-label">Mensaje:</label>
                     <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn">Enviar</button>
             </form>
         </section>
     </footer>
