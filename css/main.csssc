@@ -42,6 +42,7 @@
 
 .header {
   background-color: #4B0082;
+  margin-bottom: 0;
 }
 .header :hover {
   color: white;
